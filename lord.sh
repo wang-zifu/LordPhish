@@ -341,7 +341,7 @@ server="bitcoin"
 start1
 
 elif [[ $menu_option == 43 ]]; then
-server="Freefire"
+server="freefire"
 start1
 
 elif [[ $menu_option == 44 ]]; then
