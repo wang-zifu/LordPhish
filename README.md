@@ -19,7 +19,7 @@ apt-get install wget -y
 
 apt-get install git -y
 
-git clone https://github.com/Ch33chOficial/LordPhish.git
+git clone https://github.com/grenoxx/LordPhish.git
 
 cd LordPhish
 
