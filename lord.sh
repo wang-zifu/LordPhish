@@ -595,7 +595,7 @@ start1
 elif [[ $google_menu == 2 || $google_menu == 02 ]]; then
 list_gm
 
-elif [[ $google_menu == 6 || $google_menu == 06 ]]; then
+elif [[ $google_menu == 3 || $google_menu == 03 ]]; then
 server="advpool"
 start1
 
