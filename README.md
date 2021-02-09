@@ -6,12 +6,6 @@ And I'm create the most complete phishing tool
 
 
 <p>
-<img src="https://raw.githubusercontent.com/Ch33chOficial/LordPhish/main/img/20210113_193403_0000.png">
-<img src="https://img.shields.io/badge/Author-Ch33chOficial-blue">
-<img src="https://img.shields.io/badge/County-Brasil-red">
-<img src="https://img.shields.io/badge/Followers-54-green">
-<img src="https://img.shields.io/badge/Stars-82-blue">
-<img src="https://img.shields.io/badge/Forks-11-red">
 
 ### Usage:
 ```
@@ -52,7 +46,7 @@ bash lord.sh
 
 ## Thanks :
 <code><a href="https://github.com/thelinuxchoice"><img src="https://img.shields.io/badge/Special Thanks-The Linux Choice-blue"></code></a>
-<code><a href="https://github.com/Ch33chOficial"><img src="https://img.shields.io/badge/Thanks For Me-Gr3n0xX/Ch33chOficial-blue"></code></a>
+<code><a href="https://github.com/grenoxx"><img src="https://img.shields.io/badge/Thanks For Me-Gr3n0xX-blue"></code></a>
 <code><a href="https://github.com/htr-tech"><img src="https://img.shields.io/badge/Thanks For Pages-htr_tech-blue"></code></a>
 <code><a href="https://github.com/A1S0N"><img src="https://img.shields.io/badge/Thanks For Pages-AL1S0N-blue"></code></a>
 <code><a href="https://github.com/tony23x"><img src="https://img.shields.io/badge/Thanks For Banners-Th3_Pr3d4t0r-blue"></code></a>
