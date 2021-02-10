@@ -397,7 +397,7 @@ am start -a android.intent.action.VIEW https://t.me/Ch33chSec
 
 elif [[ $menu_option == F ]]; then
 banner
-am start -a android.intent.action.VIEW https://github.com/Ch33chOficial
+am start -a android.intent.action.VIEW https://github.com/grenoxx
 
 else
 printf "\e[1;93m [!] Invalid option!\e[0m\n"
