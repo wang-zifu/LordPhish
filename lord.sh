@@ -634,7 +634,7 @@ microsoft_ofice() {
     read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' ofice_menu
     
 if [[ $ofice_menu == 1 ]]; then
-server="Exel"
+server="exel"
 start1
 
 elif [[ $ofice_menu == 2 ]]; then
