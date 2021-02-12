@@ -4,7 +4,6 @@
 # Lordphish the best phishing tool!!!!
 # Telegram: Ch33chOficial
 # Thanks for pages:
-
 # Pages by: Gr3n0xX
 # Pages by: Tahmid Rayat
 # Pages by: A1S0N
