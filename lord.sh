@@ -3,7 +3,14 @@
 # Inspired by the linux choice shellphish
 # Lordphish the best phishing tool!!!!
 # Telegram: Ch33chOficial
+# Thanks for pages:
+
+# Pages by: Gr3n0xX
 # Pages by: Tahmid Rayat
+# Pages by: A1S0N
+# Pages by: Zeus
+# Pages by: Darkmidius
+
 # MIT license
 
 # Copyright (c) 2021 Gr3n0xX
