@@ -24,10 +24,12 @@ git clone https://github.com/grenoxx/LordPhish.git
 cd LordPhish
 
 bash lord.sh
+```
+
 ## Disclaimer :
 Aurthor assumes that the users would use lordphish **legally**. Aurthor won't be responsible in case of **any damage** caused by **any user** using this source code. This code is open sourced for educational purpose.
 
-```
+
 <code><a href="https://t.me/Gr3n0xX" target="_blank">
 <img src="https://img.shields.io/badge/TELEGRAM-GROUP-red?style=for-the-badge&logo=telegram"></a></code>
 <a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
