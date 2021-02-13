@@ -354,7 +354,8 @@ server="freefire"
 start1
 
 elif [[ $menu_option == 44 ]]; then
-start1
+microsoft_ofice
+
 
 elif [[ $menu_option == 45 ]]; then
 server="playstation"
