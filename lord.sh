@@ -2,7 +2,7 @@
 # Youtube Channel: Ch33ch_Sec
 # Inspired by the linux choice shellphish
 # Lordphish the best phishing tool!!!!
-# Github: grenoxx
+# Github: https://github.com/grenoxx
 # Telegram: Ch33chOficial
 # 68 Webpages !!!!!!
 
