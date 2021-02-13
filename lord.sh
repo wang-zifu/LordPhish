@@ -654,19 +654,19 @@ server="exel"
 start1
 
 elif [[ $ofice_menu == 2 ]]; then
-server="OneNote"
+server="onenote"
 start1
 
 elif [[ $ofice_menu == 3 ]]; then
-server="PowerPoint"
+server="powerpoint"
 start1
 
 elif [[ $ofice_menu == 4 ]]; then
-server="SharePoint"
+server="sharepoint"
 start1
 
 elif [[ $ofice_menu == 5 ]]; then
-server="Word"
+server="word"
 start1
 
 else
