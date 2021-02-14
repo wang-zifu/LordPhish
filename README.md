@@ -2,7 +2,9 @@
 And I'm create the most complete phishing tool
 
  <img src="https://img.shields.io/badge/MADE%20IN-BRASIL-green?colorA=%004aad&colorB=%000000&style=flat-square">
-
+<img src="https://img.shields.io/github/stars/LordPhish/LordPhish?style=flat-square">
+<img src="https://img.shields.io/github/issues/LordPhish/LordPhish?color=red&style=flat-square">
+<img src="https://img.shields.io/github/forks/LordPhish/LordPhish?color=teal&style=flat-square">
 
 
 <p>
