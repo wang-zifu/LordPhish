@@ -44,7 +44,7 @@ Aurthor assumes that the users would use lordphish **legally**. Aurthor won't be
 ### <<< If you copy , Then Give me The Credits >>>
 
 ## Features :
-### [+] 67 fake screen options!
+### [+] 68 fake screen options!
 #### [+] Latest Login Pages !
 #### [+] Mask URL Added !
 #### [+] Easy for Beginners !
