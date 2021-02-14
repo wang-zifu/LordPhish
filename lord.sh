@@ -6,6 +6,12 @@
 # Telegram: Ch33chOficial
 # 68 Webpages !!!!!!
 
+# Tunneling opitions:
+# Serveo.net
+# ngrok
+# Localhost
+# LocalHostRun
+
 # Thanks for pages:
 # Pages by: Gr3n0xX
 # Pages by: Tahmid Rayat
