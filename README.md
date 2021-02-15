@@ -6,7 +6,7 @@ And I'm create the most complete phishing tool
 <img src="https://img.shields.io/github/stars/grenoxx/LordPhish?style=flat-square">
 <img src="https://img.shields.io/github/issues/grenoxx/LordPhish?color=red&style=flat-square">
 <img src="https://img.shields.io/github/forks/grenoxx/LordPhish?color=teal&style=flat-square">
-
+<a href="https://github.com/grenoxx/followers"><img title="Followers" src="https://img.shields.io/github/followers/grenoxx?color=blue&style=flat-square"></a>
 
 <p>
 
